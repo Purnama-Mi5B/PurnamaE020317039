@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e7e">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="E020317039 Purnama"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active"
+                tools:ignore="HardcodedText" />
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text=" "
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/tvNim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nim :"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etNim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama :"
+                android:layout_marginTop="30dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_marginTop="30dp"
+                    tools:ignore="HardcodedText" />
+                <RadioGroup
+                    android:gravity="right"
+                    android:layout_toEndOf="@+id/tvGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jk"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rblaki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laki-laki"
+                        android:layout_weight="1"
+                        tools:ignore="HardcodedText" />
+                    <RadioButton
+                        android:id="@+id/rbPer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perempuan"
+                        android:layout_weight="1"
+                        tools:ignore="HardcodedText" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:layout_marginTop="30dp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+            <TextView
+                android:id="@+id/tvTelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telp"
+                android:layout_marginTop="30dp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etTelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="267dp">
+
+                <Button
+                    android:id="@+id/btClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Clear"
+                    android:layout_marginTop="30dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:text="Submit"
+                    android:layout_marginTop="30dp"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
